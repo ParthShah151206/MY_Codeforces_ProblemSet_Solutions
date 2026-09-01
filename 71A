@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    int length = strlen(str);
+    if(strlen(str)>11){
+        printf("%c%d%c",str[0], strlen(str)-3,  str[length-2]);
+    }else{
+        printf("%s", str);
+    }
+return 0;
+}
